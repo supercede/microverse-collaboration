@@ -34,8 +34,8 @@
       <h1 id="title" class="text-center">Microverse form</h1>
       <p id="description">We are two person working.</p>
       <form id="survey-form" class="form">
-        <div class="form-group">
-          <label for="name" class="label">Name</label>
+        <div class="form-group" >
+          <label id="name-label" for="name" class="label">Name</label>
           <input
             type="text"
             id="name"
@@ -45,7 +45,7 @@
           />
         </div>
         <div class="form-group">
-          <label for="email" class="label">Email</label>
+          <label id="email-label" for="email" class="label">Email</label>
           <input
             type="email"
             id="email"
@@ -55,7 +55,7 @@
           />
         </div>
         <div class="form-group">
-          <label for="number" class="label"
+          <label id="number-label" for="number" class="label"
             >Number in group(Between 2 and 8)</label
           >
           <input
@@ -66,8 +66,50 @@
             max="8"
             min="2"
           />
+
+        </div>
+        <div class="form-group">
+          <div class="dropdown show">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown link
+            </a>
+          
+            <div  class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>          
+        </div>
+        <div class="form-group">
+          <div class="radio">
+            <label><input type="radio" name="optradio" value="Microverse-1" checked>Micorverse 1</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" name="optradio" value="Microverse-2">Microverse 2</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" name="optradio" value="Microverse-3">Microverse 3</label>
+          </div>
+          
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="checkbox1" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+              Checkbox1
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="checkbox2" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+              Checkbox2
+            </label>
+          </div>
+          
         </div>
       </form>
+
     </div>
 
     <script src="js/index.js"></script>
